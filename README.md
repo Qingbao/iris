@@ -49,7 +49,7 @@ In order to extract 9600 bits iris code, the upper and lower eyelids will be pro
 Hamming distance (HD):
 ![image](https://github.com/Qingbao/iris/raw/master/images/10.jpg)
 
-where Q and R are subjects to compare, which contains 20*480=9600 template bits and 20*480=9600 mask bits, respectively, in order to calculate by using XOR and AND boolean operators.
+where Q and R are subjects to compare, which contains 20x480=9600 template bits and 20x480=9600 mask bits, respectively, in order to calculate by using XOR and AND boolean operators.
 
 
 ###Results:
