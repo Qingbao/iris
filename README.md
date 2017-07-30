@@ -62,4 +62,14 @@ Totally, 756*755/2=285390 pairs of comparison for each algorithm, 2268 for intra
 ###EER:
 Daugman algorithm: 0.0157    Hough transform: 0.0500
 
+How to run the program
+====
+
+1. Download the CASIA Iris Image Database(version 1.0) from (http://biometrics.idealtest.org/dbDetailForUser.do?id=1) (Signup requested)
+
+2. Read all images and extract features using the read_all_images.m and createiristemplate.m. (Templates created)
+
+3. The templates of each subject will be saved into template.mat and mask.m after you creating the templates.
+matching.m then calculating the Hamming distance (HD) for the same subject(intra-class) and different subjects (innner-class) and saving the results into HD_diff.mat(different subjucts) and HD_same.m (same subject), from them you can calculate the EER which is the final performance for each algorithm by using EER_*.m
+
 
