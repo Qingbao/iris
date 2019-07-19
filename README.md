@@ -3,13 +3,13 @@ iris
 
 Iris Recognition Algorithms Comparison between Daugman algorithm and Hough transform on Matlab.
 
-###DESCRIPTION:
+### DESCRIPTION:
 Iris is one of the most important biometric approaches that can perform high confidence recognition.
 Iris contains rich and random Information.
 Most of commercial iris recognition systems are using the Daugman algorithm. The algorithms are using in this case from open sourse 
 with modification, if you want to use the source code, please check the LICENSE.
 
-###Daugman algorithm:
+### Daugman algorithm:
 
 ![image](https://github.com/Qingbao/iris/raw/master/images/1.jpg)
 
@@ -22,7 +22,7 @@ in order to detect the changing of maximum pixel values (partial derivative).
 ![image](https://github.com/Qingbao/iris/raw/master/images/3.jpg)
 
 
-###Hough transform:
+### Hough transform:
 
 ![image](https://github.com/Qingbao/iris/raw/master/images/4.jpg)
 
@@ -37,7 +37,7 @@ vertical direction.
 
 ![image](https://github.com/Qingbao/iris/raw/master/images/6.jpg)
 
-###NORMALIZATION AND FEATURE ENCODING:
+### NORMALIZATION AND FEATURE ENCODING:
 From circles to oblong block By using the 1D Log-Gabor filter.
 In order to extract 9600 bits iris code, the upper and lower eyelids will be processed as a 9600 bits mask during the encoding.
 
@@ -45,21 +45,21 @@ In order to extract 9600 bits iris code, the upper and lower eyelids will be pro
 ![image](https://github.com/Qingbao/iris/raw/master/images/8.jpg)
 ![image](https://github.com/Qingbao/iris/raw/master/images/9.jpg)
 
-###MATCHING:
+### MATCHING:
 Hamming distance (HD):
 ![image](https://github.com/Qingbao/iris/raw/master/images/10.jpg)
 
 where Q and R are subjects to compare, which contains 20x480=9600 template bits and 20x480=9600 mask bits, respectively, in order to calculate by using XOR and AND boolean operators.
 
 
-###Results:
+### Results:
 CASIA Iris Image Database(version 1.0) (http://biometrics.idealtest.org/dbDetailForUser.do?id=1): 756 iris images form 108 different subjects. High quality of images by using NIR camera.
 
 Resolution of 320*280.
 
 Totally, 756*755/2=285390 pairs of comparison for each algorithm, 2268 for intra-class comparison and 283 122 for inter-class comparison.
 
-###EER:
+### EER:
 Daugman algorithm: 0.0157    Hough transform: 0.0500
 
 How to run the program
