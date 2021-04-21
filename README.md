@@ -1,7 +1,7 @@
 iris
 ====
 
-Iris Recognition Algorithms Comparison between Daugman algorithm and Hough transform on Matlab.
+Iris Recognition Algorithms Comparison between Daugman algorithm and Hough transform with Matlab.
 
 ### DESCRIPTION:
 Iris is one of the most important biometric approaches that can perform high confidence recognition.
