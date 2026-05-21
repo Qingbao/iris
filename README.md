@@ -3,6 +3,21 @@ iris
 
 Iris Recognition Algorithms Comparison between Daugman algorithm and Hough transform with Matlab.
 
+> **Looking for a runnable version without MATLAB?** A Rust port of the Daugman branch lives at **[Qingbao/iris-rust](https://github.com/Qingbao/iris-rust)**. Same algorithm, same EER ballpark on CASIA v1.0 (0.0172 vs the 0.0157 here), single static binary, end-to-end run in ~2 minutes instead of hours. See the comparison below to decide which repo to use.
+
+### Which repo should I use?
+
+| | This repo (MATLAB) | [iris-rust](https://github.com/Qingbao/iris-rust) |
+|---|---|---|
+| Algorithms | Daugman **and** Hough (side-by-side comparison) | Daugman only |
+| Runtime | MATLAB license required | Single static binary, no runtime deps |
+| Enroll 756 images | ~30–60 min | ~13 s |
+| Match 283 122 pairs | hours | ~90 s |
+| EER on CASIA v1.0 | 0.0157 (Daugman), 0.0500 (Hough) | 0.0172 (Daugman) |
+| Best for | Reading the algorithms side-by-side, reproducing the original paper's comparison, teaching | Running the recognition pipeline, batch processing, integration into other software |
+
+Pick **this repo** if you want to study or compare the two segmentation approaches in MATLAB, or if you specifically need the Hough variant. Pick **iris-rust** if you just want to run iris recognition on CASIA images.
+
 ### DESCRIPTION:
 Iris is one of the most important biometric approaches that can perform high confidence recognition.
 Iris contains rich and random Information.
